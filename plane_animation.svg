@@ -1,0 +1,35 @@
+<svg width="600" height="60" viewBox="0 0 600 60" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .plane {
+      font-size: 26px;
+      animation: fly 8s linear infinite alternate;
+    }
+
+    .message {
+      font-size: 22px;
+      font-weight: bold;
+      fill: #222;
+      font-family: "Courier New", monospace;
+      white-space: nowrap;
+      overflow: hidden;
+      color: blue;
+      width: 0;
+      animation: typing 8s steps(22, end) infinite alternate;
+    }
+
+    @keyframes fly {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(350px); }
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 300px; }
+    }
+  </style>
+
+  <text x="0" y="40" class="plane">✈️</text>
+  <foreignObject x="40" y="15" width="500" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="message">Welcome! Boas‑Vindas!</div>
+  </foreignObject>
+</svg>
